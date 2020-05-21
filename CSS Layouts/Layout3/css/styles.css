@@ -1,0 +1,52 @@
+main > * {
+    background: silver;
+}
+main {
+    display: grid;
+    width: 960px;
+    min-height: 600px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 300px 40px 170px 170px 50px;
+    grid-gap: 7px;
+    margin: 20px auto;
+    font-family: Helvetica;
+    font-size: 1em;
+}
+header 	{grid-row: 1 / 2; grid-column: 1 / span 3;}
+nav     {
+    grid-row: 1 / 2; grid-column: 7 / span 6;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+nav ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(4, 1fr);
+    justify-items: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.info	{
+    grid-row: 2 / 3; grid-column: 1 / span 12;
+    padding: 50px;
+}
+.title1 {grid-row: 3 / 4; grid-column: 1 / span 3;}
+.title2 {grid-row: 3 / 4; grid-column: 7 / span 3;}
+.blog1 	{grid-row: 4 / 5; grid-column: 1 / span 6;}
+.prod1 	{grid-row: 4 / 5; grid-column: 7 / span 3;}
+.prod2 	{grid-row: 4 / 5; grid-column: 10 / span 3;}
+.blog2 	{grid-row: 5 / 6; grid-column: 1 / span 6;}
+.prod3 	{grid-row: 5 / 6; grid-column: 7 / span 3;}
+.prod4 	{grid-row: 5 / 6; grid-column: 10 / span 3;}
+footer 	{
+    grid-row: 6 / 7; grid-column: 1 / span 12; 
+    text-align: center;
+   }
