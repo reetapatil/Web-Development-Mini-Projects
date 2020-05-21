@@ -1,0 +1,45 @@
+.greybar                    {
+    width:100%;
+    height:90px;
+    background:$super-light-grey;
+    clear:both;
+    padding-top:30px;
+    @include break($media-min){display: none;}
+}
+footer                      {
+    @include footer(100%, 120px, $dark-grey, center, $white, 50px);
+    @include break($media-min){text-align: center;}
+    p {
+        @include break($media-min) {
+            float: none;
+            margin: 0;
+        }
+    }
+
+    img {
+        @include break($media-min) {
+            float: none;
+            margin: 0;
+        }
+    }
+}
+.social-media               {
+    margin:0 auto;
+    width:165px;
+    div           {
+        float:left;
+        margin-right:5px;
+
+        &.one       {background:url($social-media-path) 0 0;}
+        &.two 	    {background:url($social-media-path) $social-media 0;}
+        &.three     {background:url($social-media-path) $social-media*2 0;}
+        &.four 	    {background:url($social-media-path) $social-media*3 0;}
+    }
+
+    a             {
+        display:block;
+        width:36px;
+        height:36px;
+        text-indent:-9999px;
+    }
+}

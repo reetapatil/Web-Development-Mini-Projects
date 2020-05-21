@@ -1,0 +1,15 @@
+body                        {
+    font-family: $web-font-family ;
+    font-size:1em;
+    line-height:2em;
+    background:url($bg-path) $white repeat-x;margin:0;
+}
+
+main                        {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+    @include break($media-max){width: 768px;}
+    @include break($media-med){width: 460px;}
+    @include break($media-min){width: 300px;}
+}

@@ -1,0 +1,63 @@
+figure                      {
+    @include logo(400px, 190px, url($logo-path) no-repeat 0 50px, left, block, 0);
+
+    @include break($media-max) {
+        width: inherit;
+        height: 140px;
+        float: none;
+        background-position: center;
+    } 
+    
+    @include break($media-min) {
+        background-size: contain;
+        height: 100px;
+    } 
+}
+nav                         {
+
+    @include nav-menu(540px, 190px, left, right);
+
+    @include break($media-max) {
+        width: inherit;
+        height: 50px;
+        float: none;
+        text-align : center;
+    }
+    
+    @include break($media-min) {
+        margin-bottom: 40px !important;
+    }
+
+    ul                      {
+        list-style-type:none;
+        margin-top:95px;
+
+        @include break($media-max){margin-top: 0;} 
+
+        li                   {
+            display:inline;
+            font-size:0.8em;
+            margin-right:10px;
+
+            @include break($media-max) {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            
+            @include break($media-med) {
+                font-size: 0.8em;
+                margin: 0 5px;
+            }
+
+            a                 {
+                color:$orange;
+                text-decoration:none;
+                letter-spacing:-0.01em;
+
+                &:hover           {
+                    color:$white;
+                }
+            }
+        }
+    }
+}

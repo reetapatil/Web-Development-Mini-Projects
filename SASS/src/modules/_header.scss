@@ -1,0 +1,50 @@
+header                      {
+    width:inherit;
+    clear:both;
+    text-align:center;
+    padding-top:40px;
+
+    img                  {
+        max-width:100%;
+        height:auto;
+        @include break($media-med){margin-bottom:100px;}
+        @include break($media-min){margin-bottom: 80px;}
+    }
+
+    h1                   {
+        color:$orange;
+        font-weight:100;
+        font-size:4em;
+        line-height:0;
+        @include break($media-max){font-size:3em;}
+        @include break($media-med){font-size:2em;}
+        &:first-child {
+            @include break($media-min) {
+               font-size:1.4em;
+               margin-bottom:20px;
+            }
+        }
+
+    }
+
+    h2                   {
+        color:$white;
+        font-weight:900;
+        font-size:2.5em;
+        line-height:0;
+        margin-bottom:70px;
+        @include break($media-max){font-size:1.5em;}
+        @include break($media-med){font-size:1em;}
+        @include break($media-min){font-size:1.4em;}
+    }
+
+    h3                   {
+        color:$light-grey;
+        font-weight:400;
+        font-size:2em;
+        line-height:0;
+        margin-bottom:50px;
+        @include break($media-med){font-size:1.5em;}
+        @include break($media-min){color:$white;font-size:1em;}
+    }
+}
